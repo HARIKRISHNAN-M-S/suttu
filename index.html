@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="" alt="">
+      <div>
+        <h1 id="txt" class="header_text">
+          𝓚𝓾𝓷𝓳𝓪𝓪𝓱
+          <br/>
+
+          
+          𝓦𝓲𝓵𝓵 𝔂𝓸𝓾 𝓫𝓮 𝓶𝔂 𝓼𝓸𝓾𝓵𝓶𝓪𝓽𝓮?❤️😍</h1>
+      </div>
+      
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">YES</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+         I WILL
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "success.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+      
+    </div>
+    
+  </body>
+</html>
